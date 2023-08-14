@@ -1,0 +1,9 @@
+#!/bin/bash
+# Calculate the sum of a series of numbers.
+SCORE="0"
+SUM="0"
+CONT="0"
+while true; do
+echo -n "Enter your score [0-10] ('q' to quit): "
+read SCORE;
+if (("$SCORE" < "0")) || (("$SCORE" > "10")); then
